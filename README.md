@@ -4,6 +4,12 @@ Argon(리드), Hydrogen(하위 에이전트), Carbon(자문), Decision 1(분기)
 실제 Antigravity CLI(`agy`)에서 동작하게 만드는 초안입니다.
 훅이 시점을 잡아 리드 에이전트에게 자문 호출을 안내하고, 같은 내용을 대시보드가 읽는 JSONL 이벤트로 기록합니다.
 
+![동작 화면: Argon, Decision 1, Hydrogen, Carbon 이 움직이는 대시보드](docs/demo.gif)
+
+위 화면은 [`docs/gemini_sub.html`](docs/gemini_sub.html)을 한 바퀴(40초) 녹화한 것입니다.
+이 키트가 구현하려는 흐름을 보여 주는 개념 화면이며, 숫자와 로그는 실제 세션 데이터가 아니라 예시 값입니다.
+직접 움직이는 화면을 보려면 이 파일을 내려받아 브라우저로 여세요.
+
 - 확인한 환경: `agy` 1.5.9, macOS, bash 3.2, jq 1.7.1
 - 상태: 자동 테스트는 통과했지만 실제 `agy` 세션에서는 아직 검증하지 않았습니다. 아래 "확인이 필요한 것"을 먼저 보세요.
 - 전역 설정은 건드리지 않습니다. 모든 파일은 워크스페이스의 `.agents/` 아래에 들어갑니다.
@@ -20,6 +26,8 @@ Argon(리드), Hydrogen(하위 에이전트), Carbon(자문), Decision 1(분기)
 | `install.sh` | - | 설치, 제거 |
 | `test/run-tests.sh` | - | 자동 테스트 86개 (agy를 실행하지 않음) |
 | `test/demo-scenario.sh` | - | 한 세션 분량의 이벤트 파일을 만들어 대시보드에서 미리 보기 |
+| `docs/gemini_sub.html` | - | 개념 화면 (브라우저로 열면 움직입니다) |
+| `docs/demo.gif` | - | 위 화면을 녹화한 GIF |
 
 ## 설치
 
