@@ -4,11 +4,11 @@ Argon(리드), Hydrogen(하위 에이전트), Carbon(자문), Decision 1(분기)
 실제 Antigravity CLI(`agy`)에서 동작하게 만드는 초안입니다.
 훅이 시점을 잡아 리드 에이전트에게 자문 호출을 안내하고, 같은 내용을 대시보드가 읽는 JSONL 이벤트로 기록합니다.
 
-[![동작 화면: Argon, Decision 1, Hydrogen, Carbon 이 움직이는 대시보드](docs/demo.gif)](https://htmlpreview.github.io/?https://github.com/leecg39/antigravity_advisor/blob/main/docs/gemini_sub.html)
+https://github.com/user-attachments/assets/2d712cf0-4e82-4e0c-8257-fb4a0d171d98
 
-위 화면은 [`docs/gemini_sub.html`](docs/gemini_sub.html)을 한 바퀴(40초) 녹화한 것입니다.
+위 영상은 [`docs/gemini_sub.html`](docs/gemini_sub.html)을 한 바퀴(40초) 녹화한 것입니다(1920×1080, 초당 30장). 같은 파일이 [`docs/demo.mp4`](docs/demo.mp4)에 있습니다.
 이 키트가 구현하려는 흐름을 보여 주는 개념 화면이며, 숫자와 로그는 실제 세션 데이터가 아니라 예시 값입니다.
-실제로 움직이는 화면은 위 그림을 누르거나 [여기](https://htmlpreview.github.io/?https://github.com/leecg39/antigravity_advisor/blob/main/docs/gemini_sub.html)에서 바로 볼 수 있습니다(외부 미리 보기 서비스 htmlpreview.github.io 사용).
+브라우저에서 직접 움직이는 화면은 [여기](https://htmlpreview.github.io/?https://github.com/leecg39/antigravity_advisor/blob/main/docs/gemini_sub.html)에서 볼 수 있습니다(외부 미리 보기 서비스 htmlpreview.github.io 사용).
 파일을 내려받아 브라우저로 열어도 됩니다.
 
 - 확인한 환경: `agy` 1.5.9, macOS, bash 3.2, jq 1.7.1
@@ -28,7 +28,7 @@ Argon(리드), Hydrogen(하위 에이전트), Carbon(자문), Decision 1(분기)
 | `test/run-tests.sh` | - | 자동 테스트 86개 (agy를 실행하지 않음) |
 | `test/demo-scenario.sh` | - | 한 세션 분량의 이벤트 파일을 만들어 대시보드에서 미리 보기 |
 | `docs/gemini_sub.html` | - | 개념 화면 (브라우저로 열면 움직입니다) |
-| `docs/demo.gif` | - | 위 화면을 녹화한 GIF |
+| `docs/demo.mp4` | - | 위 화면을 녹화한 영상 (H.264, 1920×1080, 초당 30장, 40초) |
 
 ## 설치
 
